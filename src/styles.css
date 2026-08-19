@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root { --pink:#ffd6e7; --hot:#e45f9b; --rose:#fff3f8; --ink:#3f2331; --gold:#c89242; }
+* { box-sizing: border-box; }
+body { margin:0; font-family:Poppins, sans-serif; color:var(--ink); background:radial-gradient(circle at top left, #fff 0, var(--pink) 32%, #fff7fb 70%); }
+main { overflow:hidden; }
+.nav { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1.2rem clamp(1rem, 4vw, 4rem); position:sticky; top:0; z-index:5; backdrop-filter: blur(18px); background:rgba(255, 246, 250, .72); border-bottom:1px solid rgba(228,95,155,.18); }
+.brand { display:flex; align-items:center; gap:.5rem; font-weight:800; font-size:1.35rem; color:var(--hot); }
+.tag { font-family:'Playfair Display', serif; letter-spacing:.08em; text-transform:uppercase; font-size:.78rem; }
+.cart, button, .primary, .secondary { border:0; border-radius:999px; padding:.85rem 1.15rem; font-weight:700; cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; gap:.45rem; }
+.cart, .secondary { background:white; color:var(--hot); box-shadow:0 10px 30px rgba(228,95,155,.12); }
+.hero { min-height:78vh; display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:3rem; padding:4rem clamp(1rem, 6vw, 6rem); }
+.eyebrow { color:var(--hot); font-weight:700; text-transform:uppercase; letter-spacing:.12em; display:flex; align-items:center; gap:.4rem; font-size:.78rem; }
+h1, h2 { font-family:'Playfair Display', serif; line-height:.95; margin:.3rem 0 1rem; }
+h1 { font-size:clamp(3.2rem, 8vw, 7.6rem); max-width:850px; }
+h2 { font-size:clamp(2.3rem, 5vw, 4.3rem); }
+.lead { font-size:1.15rem; line-height:1.8; max-width:640px; }
+.actions { display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem; }
+.primary { background:linear-gradient(135deg, var(--hot), #ff8dbc); color:white; box-shadow:0 18px 45px rgba(228,95,155,.35); }
+.hero-card { position:relative; min-height:520px; border-radius:3rem; padding:2rem; background:linear-gradient(160deg, rgba(255,255,255,.7), rgba(255,214,231,.85)); border:1px solid white; box-shadow:0 30px 80px rgba(196,86,133,.25); display:grid; place-items:center; text-align:center; }
+.jewel { width:250px; aspect-ratio:1; border-radius:50%; display:grid; place-items:center; font-family:'Playfair Display', serif; font-size:5rem; color:white; background:linear-gradient(145deg, #ffc0dc, #e45f9b); box-shadow:inset 0 0 30px rgba(255,255,255,.55), 0 30px 70px rgba(228,95,155,.35); }
+.orb { position:absolute; border-radius:50%; filter:blur(2px); background:rgba(255,255,255,.75); }
+.orb-one { width:120px; height:120px; top:12%; right:14%; } .orb-two { width:80px; height:80px; bottom:18%; left:16%; }
+.features, .mood-panel, .shop { margin:0 clamp(1rem, 6vw, 6rem) 5rem; }
+.features { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.feature { background:white; border-radius:1.4rem; padding:1.2rem; display:flex; gap:.7rem; align-items:center; color:var(--hot); font-weight:700; box-shadow:0 12px 30px rgba(228,95,155,.11); }
+.mood-panel { display:grid; grid-template-columns:1fr 360px; gap:2rem; background:rgba(255,255,255,.62); border:1px solid white; border-radius:2.2rem; padding:2rem; box-shadow:0 30px 80px rgba(196,86,133,.16); }
+.chips { display:flex; gap:.8rem; flex-wrap:wrap; } .chips button { background:white; color:var(--hot); text-transform:capitalize; } .chips .active { background:var(--ink); color:white; }
+.recommendation { background:linear-gradient(145deg, #fff, #ffe5f0); border-radius:1.7rem; padding:2rem; text-align:center; border:1px solid white; }
+.recommendation span { font-size:5rem; color:var(--gold); } .recommendation button, .product button { background:var(--hot); color:white; }
+.section-heading { text-align:center; }
+.grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem; }
+.product { background:white; border-radius:1.6rem; padding:1rem; box-shadow:0 18px 45px rgba(228,95,155,.13); }
+.product-art { height:210px; border-radius:1.2rem; background:linear-gradient(135deg, #fff0f6, #ffd0e4); display:grid; place-items:center; } .product-art span { font-size:5rem; color:var(--gold); }
+.product p { color:var(--hot); font-weight:700; } .product div:last-child { display:flex; justify-content:space-between; align-items:center; }
+@media (max-width: 850px) { .hero, .mood-panel { grid-template-columns:1fr; } .features, .grid { grid-template-columns:1fr; } .tag { display:none; } .hero-card { min-height:360px; } }

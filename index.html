@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Avel — Detail that defines u. A baby-pink jewellery ecommerce boutique with a personalised mood matcher." />
+    <title>Avel — Detail that defines u</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav">
+        <div class="brand" aria-label="Avel home">◇ Avel</div>
+        <div class="tag">Detail that defines u</div>
+        <button class="cart" id="cart-button">Bag · <span id="cart-count">0</span></button>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">✦ Baby-pink fine jewellery boutique</p>
+          <h1>Avel — Detail that defines u</h1>
+          <p class="lead">Discover soft-glow jewellery made for everyday elegance, meaningful gifting, and mirror selfies that deserve a little sparkle.</p>
+          <div class="actions">
+            <a href="#shop" class="primary">Shop the edit</a>
+            <a href="#mood" class="secondary">Try the Mood Match</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Featured jewellery preview">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="jewel">AV</div>
+          <p>Personalised pieces wrapped in satin blush packaging.</p>
+        </div>
+      </section>
+
+      <section class="features" aria-label="Store promises">
+        <div class="feature">✓ Hypoallergenic shine</div>
+        <div class="feature">↟ 48-hour gift dispatch</div>
+        <div class="feature">★ Hand-finished details</div>
+      </section>
+
+      <section id="mood" class="mood-panel">
+        <div>
+          <p class="eyebrow">✧ Unique feature</p>
+          <h2>Avel Mood Match</h2>
+          <p>Pick your vibe and we instantly recommend the jewellery detail that defines you today.</p>
+          <div class="chips" id="mood-buttons"></div>
+        </div>
+        <article class="recommendation" id="recommendation" aria-live="polite"></article>
+      </section>
+
+      <section id="shop" class="shop">
+        <div class="section-heading">
+          <p class="eyebrow">New in</p>
+          <h2>Blush collection</h2>
+        </div>
+        <div class="grid" id="product-grid"></div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
